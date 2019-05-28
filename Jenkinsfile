@@ -32,7 +32,7 @@ pipeline {
 
             steps {
 
-                            sh "/sonar_scanner/bin/"
+                            sh "/sonar_scanner/bin/sonar-scanner"
 
                 //
 
