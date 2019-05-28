@@ -56,7 +56,7 @@ pipeline {
 
             steps {
 
-                   sh 'scp target/*.war root@192.168.1.101:var/lib/tomcat/webapps/'
+                   sh 'scp target/*.war root@192.168.1.101:/var/lib/tomcat/webapps/'
 
                 //
 
