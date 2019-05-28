@@ -8,9 +8,7 @@ pipeline {
 
             steps {
 
-                                               
-
-                                                  echo "this is step 2
+                      git "https://github.com/NazmurTraining/pipe.git"
 
                 //
 
@@ -22,7 +20,7 @@ pipeline {
 
             steps {
 
-                                                   echo "this is step1"
+                         sh "mvn package"
 
                 //
 
@@ -34,7 +32,7 @@ pipeline {
 
             steps {
 
-                                                echo "this is step1"
+                            sh "/sonar_scanner/bin/"
 
                 //
 
